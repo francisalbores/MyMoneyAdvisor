@@ -1,0 +1,10 @@
+<h1>Enter Income</h1>
+<div class="form-group">
+	<label>Name</label>
+	<input type="text" ng-model="income.name" class="form-control" />
+</div>
+<div class="form-group">
+	<label>Php</label>
+	<input type="number" ng-model="income.cost" class="form-control" />
+</div>
+<input class="btn btn-primary" type="submit" ng-click="addIncome()" value="Save" />

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body ng-app="mainApp">
+    <div ng-controller="mainCont">
+    	<a href="/expense">Expense</a> | 
+    	<a href="/income">Income</a> | 
+    	<a href="/thank-you">Thank You</a> |
+      <a href="/result">Result</a>
+    	<hr />
+  	  <div class="container">
+  		  <div ng-view=""></div>
+  	  </div>
+    </div>
+	<script type="text/javascript" src="/javascripts/angular.js"></script>
+	<script type="text/javascript" src="/javascripts/angular-route.js"></script>
+    <script type="text/javascript" src="/javascripts/script.js"></script>
+  </body>
+</html>
